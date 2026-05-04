@@ -52,6 +52,7 @@
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.Testing</x:String>
       <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -116,9 +117,10 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>UiPath.Testing</AssemblyReference>
       <AssemblyReference>Salesforce Expense Tracker.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="835,933" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="835,844" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
       <Variable x:TypeArguments="x:String" Name="Username" />
@@ -139,9 +141,13 @@
         <InArgument x:TypeArguments="ss:SecureString" x:Key="in_Password">[Password]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log an Expense - Invoke Workflow File (ReusableComponents\Log an Expense.xaml)" sap:VirtualizedContainerService.HintSize="450,266" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableComponents\Log an Expense.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log an Expense - Invoke Workflow File (ReusableComponents\Log an Expense.xaml)" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableComponents\Log an Expense.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_ExpenseAmount">[(New System.Random().NextDouble() * (500.00 - 50.00) + 50.00).ToString("F2")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ExpenseSubType">Groceries</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ExpenseType">Household</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ExpenseDate">[DateTime.Now.ToString("dd MMM yyyy")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_VendorName">[(New String() {"Woolworths", "Aldi", "Coles", "IGN", "Other"})(New Random().Next(0, 5))]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Logout from Expense Tracker - Invoke Workflow File (ReusableComponents\Logout from Expense Tracker.xaml)" sap:VirtualizedContainerService.HintSize="450,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ReusableComponents\Logout from Expense Tracker.xaml">

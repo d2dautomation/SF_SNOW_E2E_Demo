@@ -69,10 +69,18 @@
       <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="SNOW_SF_Flowchart_Test" sap:VirtualizedContainerService.HintSize="882,622" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="SNOW_SF_Flowchart_Test" sap:VirtualizedContainerService.HintSize="841,588" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
+      <Variable x:TypeArguments="x:String" Name="flow_Success">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Pass</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:Boolean" Name="snow_Success" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -95,7 +103,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log Expense Test - Invoke Workflow File (Test Cases\Log Expense Test.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Test Cases\SF_Log_Expense_Test.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          <InArgument x:TypeArguments="x:String" x:Key="argument1" />
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -115,7 +123,7 @@
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="SNOW_Create_New_Employee - Invoke Workflow File (Test Cases\SNOW_Create_New_Employee.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Test Cases\SNOW_Create_New_Employee.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="x:Boolean" x:Key="out_Success">[snow_Success]</OutArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_FlowDecision">Fail</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_FlowDecision">[flow_Success]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -124,7 +132,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
       <FlowStep.Next>
-        <FlowDecision x:Name="__ReferenceID1" Condition="[snow_Success=True]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1" True="{x:Reference __ReferenceID0}">
+        <FlowDecision x:Name="__ReferenceID1" Condition="[snow_Success=True]" DisplayName="User Created Successfully?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1" True="{x:Reference __ReferenceID0}">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
