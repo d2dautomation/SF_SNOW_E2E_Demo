@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wM7VvuzsVEaqnPH0-dz0Og" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do" DesignTimeRectangle="80, 185, 202, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-MENU' /&gt;&lt;webctrl id='filter' shadowhostid='' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-MENU' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl id='filter' shadowhostid='' tag='INPUT' type='text' class='navigation-filter keyboard-navigatable has-focus' placeholder='Filter' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ce35a60c-8175-4e0d-99cf-5c86fbaf2181" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Incident Overview | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="c9ca05dcd384e0c99f714c8e629dbc4c.jpg" xmlns="">0R3DVjQvOm0m1mhZuP2h3TA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

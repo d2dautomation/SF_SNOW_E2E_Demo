@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT filter",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "9y2HfYCSBESlguGOG9hceg",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/9y2HfYCSBESlguGOG9hceg",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "Created": "2026-05-04T04:34:35.4570332Z",
+  "Updated": "2026-05-04T04:34:35.4570332Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

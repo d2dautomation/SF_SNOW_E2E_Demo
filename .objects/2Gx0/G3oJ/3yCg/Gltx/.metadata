@@ -1,0 +1,13 @@
+﻿{
+  "Name": "All",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Gltxdwh-b0m3aQk5I_9cog",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/Gltxdwh-b0m3aQk5I_9cog",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "Created": "2026-05-04T04:29:55.9156318Z",
+  "Updated": "2026-05-04T04:29:55.9156318Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
