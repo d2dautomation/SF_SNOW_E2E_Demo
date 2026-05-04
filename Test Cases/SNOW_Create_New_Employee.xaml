@@ -126,7 +126,7 @@
       <AssemblyReference>UiPath.Orchestrator.Client</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="2135,623.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="593,587.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Mr" Name="empTitle" />
       <Variable x:TypeArguments="x:String" Default="1 York St" Name="empAddress1" />
@@ -166,10 +166,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NSetRuntimeBrowser>
-    <ui:GetRobotCredential AssetName="SNOW_Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[password]" TimeoutMS="{x:Null}" Username="[username]">
+    <ui:GetRobotCredential AssetName="SNOW_Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Salesforce Expense Tracker" sap:VirtualizedContainerService.HintSize="450,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[password]" TimeoutMS="{x:Null}" Username="[username]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>

@@ -118,7 +118,7 @@
       <AssemblyReference>Salesforce Expense Tracker.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="764,844" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="835,933" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
       <Variable x:TypeArguments="x:String" Name="Username" />
@@ -130,7 +130,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="SF_D2D_Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="450,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="SET Username Password DevTest" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Salesforce Expense Tracker" sap:VirtualizedContainerService.HintSize="450,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
     <uix:NSetRuntimeBrowser BrowserType="[NBrowserType.Chrome]" DisplayName="Set Runtime Browser" sap:VirtualizedContainerService.HintSize="450,123" sap2010:WorkflowViewState.IdRef="NSetRuntimeBrowser_1" Version="V4" />
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Login to Expense Tracker - Invoke Workflow File (ReusableComponents\Login to Expense Tracker.xaml)" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ReusableComponents\Login to Expense Tracker.xaml">
       <ui:InvokeWorkflowFile.Arguments>
@@ -139,7 +139,7 @@
         <InArgument x:TypeArguments="ss:SecureString" x:Key="in_Password">[Password]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log an Expense - Invoke Workflow File (ReusableComponents\Log an Expense.xaml)" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableComponents\Log an Expense.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log an Expense - Invoke Workflow File (ReusableComponents\Log an Expense.xaml)" sap:VirtualizedContainerService.HintSize="450,266" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableComponents\Log an Expense.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
