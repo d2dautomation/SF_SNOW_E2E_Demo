@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LdpECJA5s0ul3TPkwiSCdA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/x_uipa_simple_gift_ddm_hr.do%3Fsys_id%3Db5a1ffce9724c3104e77b22e6253af24%26sysparm_record_target%3Dx_uipa_simple_gift_ddm_hr%26sysparm_record_row%3D3%26sysparm_record_rows%3D3%26sysparm_record_list%3D" DesignTimeRectangle="994, 325, 70, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aaname='Delete' tag='BUTTON' type='button' /&gt;" Guid="6fd2917b-6521-4e32-b8e9-e5a3912442b4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Created 2026-05-01 11:28:47 | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8de5a58798bb5d9d6d47e1cedb46851d.png" xmlns="">0ctRHPGjJx0qsMjIib7VrmA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

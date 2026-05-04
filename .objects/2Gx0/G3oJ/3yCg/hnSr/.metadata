@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Emp Address",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "hnSrTLKRi0WcmFA8_eS7TA",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/hnSrTLKRi0WcmFA8_eS7TA",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "Created": "2026-05-01T09:08:41.3580867Z",
+  "Updated": "2026-05-04T01:47:50.8144852Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

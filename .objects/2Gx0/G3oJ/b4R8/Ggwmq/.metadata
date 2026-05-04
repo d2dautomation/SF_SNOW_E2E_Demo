@@ -1,0 +1,13 @@
+﻿{
+  "Name": "MobileTel",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "GgwmqwFqv0qutuKjgJbBjw",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/GgwmqwFqv0qutuKjgJbBjw",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/b4R8oUlMTU6n_aMkKjSlmg",
+  "Created": "2026-05-01T07:27:13.1655415Z",
+  "Updated": "2026-05-01T07:27:13.1655415Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

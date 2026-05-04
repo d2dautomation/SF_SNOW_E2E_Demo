@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pB9zBwhHrU2v2_2AcuCvuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="daytodayautomationcom--etdevtest.sandbox.lightning.force.com/lightning/n/Expense_Tracker_Main" DesignTimeRectangle="76, 622, 1798, 56" DesignTimeScaleFactor="1.75" ElementType="Button" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/app_flexipageLwcAppFlexipageWrapper/app_flexipageLwcAppFlexipage:lwcAppFlexipage' tag='APP_FLEXIPAGE-LWC-APP-FLEXIPAGE' /&gt;&lt;webctrl aria-role='combobox' tag='BUTTON' type='button' class='slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value' aaname='Household' check:innerText='Household' /&gt;" Guid="56a09d4e-7939-421f-b6f7-fad812e1d498" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Expense Tracker Main | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="98, 623, 109, 54" ElementType="Text" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/app_flexipageLwcAppFlexipageWrapper/app_flexipageLwcAppFlexipage:lwcAppFlexipage' tag='APP_FLEXIPAGE-LWC-APP-FLEXIPAGE' /&gt;&lt;webctrl class='slds-truncate' tag='SPAN' type='' aaname='Household' check:innerText='Household' /&gt;" Guid="0a2c468e-3170-491a-80e5-6f4793a2ab04" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0933403461ed62e8b947a8fbea3ec389.png" xmlns="">0jSh2znn1I0OJEnatKUjiLQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

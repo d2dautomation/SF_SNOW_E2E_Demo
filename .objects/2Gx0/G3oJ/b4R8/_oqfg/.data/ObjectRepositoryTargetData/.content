@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vuGBOi1MRkqyTA2lZrvEgw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1855, 392, 313, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aria-labelledby='label.x_uipa_simple_gift_ddm_hr.country' tag='INPUT' type='text' /&gt;" Guid="cec323dd-1899-4f7c-9f00-5eef930d67b8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="6ef547d30c38ac5afc33f551e5e1e766.png" xmlns="">06AjbnCR8w06FLkQzA9W-yA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

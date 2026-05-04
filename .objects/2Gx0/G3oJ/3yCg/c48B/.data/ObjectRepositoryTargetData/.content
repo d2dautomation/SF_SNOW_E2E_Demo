@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0XIs6Om8uEO2N4_i87Qj6g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/x_uipa_simple_gift_ddm_hr_list.do%3Fsysparm_userpref_module%3D4d355a7fdb83281021be144e1396196e%26sysparm_clear_stack%3Dtrue" DesignTimeRectangle="1463, 179, 49, 32" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="8c11d112-9e93-4fb2-9933-8cc5a0d737a0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DDM HRs | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="1b84a24db65957fb2faa8134ec6848c7.png" xmlns="">0I5F7Pqvk4Eu1jrEFZTj5tg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

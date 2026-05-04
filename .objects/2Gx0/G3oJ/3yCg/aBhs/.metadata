@@ -1,0 +1,13 @@
+﻿{
+  "Name": "'Log out'",
+  "Type": "Element",
+  "Id": "aBhs1ciEZ0yrXx-Gu95jog",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/aBhs1ciEZ0yrXx-Gu95jog",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "Created": "2026-05-01T08:45:16.0843095Z",
+  "Updated": "2026-05-01T08:45:16.0843095Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "Name": "SNOW_SF_CrossApp_Demo",
+  "ProjectType": "Tests",
+  "Description": "Demo project interacting with ServiceNow",
+  "MainFile": "Main.xaml"
+}

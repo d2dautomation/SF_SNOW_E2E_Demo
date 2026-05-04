@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Label 'Favorites'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "TKhHJO_D1k6wm8_NhuSg5Q",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/TKhHJO_D1k6wm8_NhuSg5Q",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "Created": "2026-05-01T07:21:28.4259326Z",
+  "Updated": "2026-05-01T07:21:28.4259326Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

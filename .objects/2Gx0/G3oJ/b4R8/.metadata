@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Create Created | DDM HR | ServiceNow",
+  "Type": "Screen",
+  "Id": "b4R8oUlMTU6n_aMkKjSlmg",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/b4R8oUlMTU6n_aMkKjSlmg",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/G3oJcaPx7kC5e2fjZFArWQ",
+  "Created": "2026-05-01T07:27:12.8646674Z",
+  "Updated": "2026-05-01T07:27:12.8646674Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

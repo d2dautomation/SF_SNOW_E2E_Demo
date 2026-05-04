@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RMvI2V7lPUeGFH2KbjL4Ng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24cti_softphone.do" DesignTimeRectangle="1477, 135, 24, 24" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='NOW-AVATAR' /&gt;&lt;webctrl class='now-avatar-content' shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='NOW-AVATAR' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl class='now-avatar-content' shadowhostid='' tag='SPAN' type='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='UL' /&gt;" Guid="7b6db255-1129-4d59-b45e-df0dd8a8a2fa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ServiceNow CTI | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="7a8d7f58138882477c472141fd289015.png" xmlns="">0vX3Zpq0OzkS0hyB7PTrZAg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

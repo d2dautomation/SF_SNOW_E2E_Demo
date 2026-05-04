@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VNiQbba_Q0yzXAUTtXXGow" Reference="KQVPUxej_kueHq9x81j-2w/vh23vf1yUUCsFk_Stynt8Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/x_uipa_simple_gift_ddm_hr_list.do" DesignTimeRectangle="404, 316, 55, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-label='{0}Bad - Open record: *' tableRow='*' tag='A' /&gt;&quot;, empAddress1)]" Guid="a49beae9-7afb-4a03-a9ce-179ce92993f6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DDM HRs | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0927d40950c14b549fc7fb58890c97a7.png" xmlns="">0mSeb7B_IY0imp6nQ7wI8gw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="1 York St" Name="empAddress1" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

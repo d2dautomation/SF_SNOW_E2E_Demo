@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Edge: Login | Salesforce",
+  "Type": "Screen",
+  "Id": "qjyyMY4Y8ECDqe4duhEpdQ",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/qjyyMY4Y8ECDqe4duhEpdQ",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/4osUxFM7L06Bl7p9dzDaqQ",
+  "Created": "2026-05-04T00:33:45.0273251Z",
+  "Updated": "2026-05-04T00:33:45.0273251Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

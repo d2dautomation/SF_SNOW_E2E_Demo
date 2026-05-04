@@ -1,0 +1,15 @@
+﻿{
+  "Name": "*Amount",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "7laeBt1U60euZ1UzRIhFoQ",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/7laeBt1U60euZ1UzRIhFoQ",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/xb7laz1ULkSC81U3GGZM9Q",
+  "Created": "2026-05-04T00:33:44.4977265Z",
+  "Updated": "2026-05-04T00:33:44.4977265Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

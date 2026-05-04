@@ -1,0 +1,14 @@
+﻿{
+  "Name": "1 York St",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "fZ734Peli0OLOLRz_xUjYA",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/fZ734Peli0OLOLRz_xUjYA",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "Created": "2026-05-01T08:32:16.5481295Z",
+  "Updated": "2026-05-01T08:32:16.5481295Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

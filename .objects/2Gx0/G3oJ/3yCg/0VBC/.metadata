@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Label 'DDM HRs'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "0VBCsKe1R0KCehJhsI3Inw",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/0VBCsKe1R0KCehJhsI3Inw",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "Created": "2026-05-01T07:22:12.0391791Z",
+  "Updated": "2026-05-01T07:22:12.0391791Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

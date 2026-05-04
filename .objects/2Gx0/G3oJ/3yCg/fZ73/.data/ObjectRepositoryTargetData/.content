@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UfZ2uYRHsUS_TKd16hfogg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/x_uipa_simple_gift_ddm_hr_list.do%3Fsysparm_userpref_module%3D4d355a7fdb83281021be144e1396196e%26sysparm_clear_stack%3Dtrue" DesignTimeRectangle="404, 365, 55, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-label='1 York St - Open record: Created 2026-05-01 11:28:47' tableRow='5' tag='A' /&gt;" Guid="ebf73ff4-f1d6-49d5-b465-ac09a9506841" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DDM HRs | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f12636d1225a8ebf2616c4e61fe3f7ff.png" xmlns="">0hbBGtsG7QUy7R_GaVAsVtg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

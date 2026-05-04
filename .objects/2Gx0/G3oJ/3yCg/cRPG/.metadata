@@ -1,0 +1,16 @@
+﻿{
+  "Name": "DDM HRs Link",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "cRPGuh4D_k6J66cWv9sTOA",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/cRPGuh4D_k6J66cWv9sTOA",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "Created": "2026-05-01T07:57:16.0095051Z",
+  "Updated": "2026-05-01T07:57:47.6514249Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

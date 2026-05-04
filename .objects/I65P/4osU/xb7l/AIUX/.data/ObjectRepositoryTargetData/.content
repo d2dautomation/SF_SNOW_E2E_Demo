@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ulOLNJhc3Ee5BOouT2Peog" Reference="jFcmwqSYME-MhNMJe8mogw/NvfsVlprHUmv5gInEHi8Aw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="daytodayautomationcom--etdevtest.sandbox.lightning.force.com/lightning/n/Expense_Tracker_Main" DesignTimeRectangle="138, 395, 220, 40" DesignTimeScaleFactor="1.75" ElementType="Text" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl class='slds-truncate' tag='SPAN' innertext='Expense Tracker' visibleinnertext='Expense Tracker' /&gt;" Guid="a10cf66a-fbff-4870-ae30-42900a8ad7e5" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Expense Tracker Main | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Visible" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="99, 411, 8, 8" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl class='slds-icon-waffle' tag='DIV' type='' aaname='' /&gt;" Guid="fe880e13-ef8e-49aa-b6b0-3c5cd4ff95fb" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="250c0ec958b46b2c3a0b6b4c2428e100.png" xmlns="">0Jr7375PIUkC_5Wj8NwqgPQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

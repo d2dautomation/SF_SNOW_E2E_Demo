@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Income in Australia",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "uSoYTM8MCUCvf_rNjadMAQ",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/uSoYTM8MCUCvf_rNjadMAQ",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/xb7laz1ULkSC81U3GGZM9Q",
+  "Created": "2026-05-04T00:33:44.862598Z",
+  "Updated": "2026-05-04T00:33:44.862598Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

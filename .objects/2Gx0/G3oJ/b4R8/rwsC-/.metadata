@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Gender",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "rwsC-xg40U6K9WYSC4kEUg",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/rwsC-xg40U6K9WYSC4kEUg",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/b4R8oUlMTU6n_aMkKjSlmg",
+  "Created": "2026-05-01T07:27:13.0444537Z",
+  "Updated": "2026-05-01T07:27:13.0444537Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

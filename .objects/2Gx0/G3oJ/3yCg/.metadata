@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Admin Console | ServiceNow",
+  "Type": "Screen",
+  "Id": "3yCgKbVnpU-pZc4ywApTTQ",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/3yCgKbVnpU-pZc4ywApTTQ",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/G3oJcaPx7kC5e2fjZFArWQ",
+  "Created": "2026-05-01T07:21:22.3048252Z",
+  "Updated": "2026-05-01T07:21:22.3048252Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

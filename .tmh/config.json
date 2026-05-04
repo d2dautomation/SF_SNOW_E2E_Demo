@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://staging.uipath.com/swong28/defaulttenant/testmanager_/",
+  "defaultProject": {
+    "id": "98ac6ca9-1ca1-0000-d23f-0b491dc8af49",
+    "name": "Team Expense Tracker",
+    "key": "ETT"
+  }
+}

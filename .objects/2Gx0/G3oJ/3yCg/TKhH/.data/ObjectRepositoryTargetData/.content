@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JNt0vLwdc0aZdROeCytyxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do%3Fsysparm_dashboard%3D283eeaa0c730030020508b3c5c9763b3%26sysparm_breakdown_source%3D7e945739c7000300b0ea8b3c5c976319%26sysparm_element%3D%26sysparm_element_value%3D%26sysparm_tab%3D964eaaa0c730030020508b3c5c9763a3" DesignTimeRectangle="340, 139, 87, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl aria-label='Favorites' aria-role='menuitem' shadowhostid='' tag='DIV' /&gt;" Guid="1486cd17-069a-4860-b9fa-24045261e83e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Admin Console | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1f2fc540ebe7d2d8cee1eaaa34d80684.png" xmlns="">0dBvZzps7Y0GqMcqCWGgb_Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

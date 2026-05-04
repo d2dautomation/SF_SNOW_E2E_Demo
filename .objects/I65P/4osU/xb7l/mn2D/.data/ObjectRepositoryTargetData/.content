@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1GYaI_DTV0mNO1_wdMIvbg" Reference="jFcmwqSYME-MhNMJe8mogw/ElnbobzWiEmZLUqsYioAqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="daytodayautomationcom--etdevtest.sandbox.lightning.force.com/lightning/n/Expense_Tracker_Main" DesignTimeRectangle="45, 600, 889, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/app_flexipageLwcAppFlexipageWrapper/app_flexipageLwcAppFlexipage:lwcAppFlexipage' matching:sfl-path='fuzzy' fuzzylevel:sfl-path='0.0' tag='APP_FLEXIPAGE-LWC-APP-FLEXIPAGE' /&gt;&lt;webctrl aria-label='Sub-Type' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' aria-role='combobox' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' type='button' class='slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="6def675d-2972-4599-aab8-42b2d9b97312" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Expense Tracker Main | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="45, 576, 67, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/app_flexipageLwcAppFlexipageWrapper/app_flexipageLwcAppFlexipage:lwcAppFlexipage' tag='APP_FLEXIPAGE-LWC-APP-FLEXIPAGE' matching:sfl-path='fuzzy' fuzzylevel:sfl-path='0.0' /&gt;&lt;webctrl aaname='Sub-Type' class='slds-form-element__label' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='*Sub-Type' /&gt;" Guid="dc56a764-2b80-42cb-b3a0-db9982608b9c" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5ba7239475d12a1688177c355499a234.jpg" xmlns="">0J2e3SygBs0abXYUKyApx1Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,71 @@
+{
+  "name": "SNOW_SF_CrossApp_Demo",
+  "projectId": "946e049b-9dca-46ff-9d8f-729a4238463d",
+  "description": "Demo project interacting with ServiceNow",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Pipelines.Activities": "[3.0.5]",
+    "UiPath.System.Activities": "[26.2.4]",
+    "UiPath.Testing.Activities": "[25.10.2]",
+    "UiPath.UIAutomation.Activities": "25.10.31"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.10.1.0",
+  "projectVersion": "1.0.231327154",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": true,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "581c3003-b4a7-480a-9702-8c3f1d08a83d",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\SNOW_Create_New_Employee.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fd28283a-48ce-42ba-b230-7dc43a12af59",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\SF_Log_Expense_Test.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "40479346-3a94-48c1-baec-eb5e5e9ad2b6",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\SNOW_SF_Flowchart_Test.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

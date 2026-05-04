@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Log in | ServiceNow",
+  "Type": "Screen",
+  "Id": "jDoapTsKNEurNY3vA3bOUg",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/jDoapTsKNEurNY3vA3bOUg",
+  "ParentRef": "KQVPUxej_kueHq9x81j-2w/G3oJcaPx7kC5e2fjZFArWQ",
+  "Created": "2026-05-01T07:07:57.6859501Z",
+  "Updated": "2026-05-01T07:07:57.6859501Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

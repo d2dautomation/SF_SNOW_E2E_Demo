@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Expense Tracker on Salesforce",
+  "Type": "App",
+  "Id": "I65PUGBGlk25HQghckKipw",
+  "Reference": "KQVPUxej_kueHq9x81j-2w/I65PUGBGlk25HQghckKipw",
+  "Created": "2026-05-04T00:33:44.37006Z",
+  "Updated": "2026-05-04T00:34:09.5797944Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

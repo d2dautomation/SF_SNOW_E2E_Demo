@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FDrZ8Bfi7UWdUQ8Wdyba_g" Reference="jFcmwqSYME-MhNMJe8mogw/w0Ld6ZKr6USzEbaVDG6j9Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="daytodayautomationcom--etdevtest.sandbox.lightning.force.com/lightning/page/home" DesignTimeRectangle="76, 671, 518, 42" DesignTimeScaleFactor="1.75" ElementType="Text" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;one-app-launcher-menu&amp;gt;div&amp;gt;div&amp;gt;one-app-launcher-menu-item&amp;gt;a&amp;gt;div' tag='DIV' innertext='Expense Tracker' visibleinnertext='Expense Tracker' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl type='' tag='DIV' innertext='Expense Tracker' visibleinnertext='Expense Tracker' class='slds-grid slds-grid--vertical-align-center al-text-wrapper' aaname='' check:text='Expense Tracker' /&gt;" Guid="a0da7967-b969-4c97-a775-d8a4b0084cb6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Expense Tracker Main | Salesforce' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="55, 599, 560, 65" ElementType="Text" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiPanel/oneAppLauncherMenu' tag='ONE-APP-LAUNCHER-MENU' /&gt;&lt;webctrl tag='H3' type='' class='slds-dropdown__header slds-truncate' aaname='Apps' check:innerText='Apps' /&gt;" Guid="b10c0f8b-e04c-4513-bada-7edd50b42376" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="befc7e5150b8b3d2d610ff914ccb04ea.png" xmlns="">06Comn6eTFUij2xv7nQTHRA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
