@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" this:TestCase.in_FlowDecision="Pass" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" this:TestCase.in_FlowDecision="Pass" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_FlowDecision" Type="InArgument(x:String)" />
     <x:Property Name="out_Success" Type="OutArgument(x:Boolean)">
@@ -58,6 +58,8 @@
       <x:String>UiPath.Orchestrator.Client.Api.Models</x:String>
       <x:String>UiPath.Pipelines.Activities</x:String>
       <x:String>UiPath.Pipelines.Activities.Persistence</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -124,9 +126,10 @@
       <AssemblyReference>netstandard</AssemblyReference>
       <AssemblyReference>UiPath.Pipelines.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Orchestrator.Client</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="593,587.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="835,2783" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Mr" Name="empTitle" />
       <Variable x:TypeArguments="x:String" Default="1 York St" Name="empAddress1" />
@@ -158,7 +161,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NSetRuntimeBrowser BrowserType="Chrome" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Runtime Browser" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NSetRuntimeBrowser_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V5">
+    <uix:NSetRuntimeBrowser BrowserType="Chrome" DisplayName="Set Runtime Browser" sap:VirtualizedContainerService.HintSize="524,57" sap2010:WorkflowViewState.IdRef="NSetRuntimeBrowser_1" Version="V5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -166,15 +169,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NSetRuntimeBrowser>
-    <ui:GetRobotCredential AssetName="SNOW_Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Salesforce Expense Tracker" sap:VirtualizedContainerService.HintSize="450,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[password]" TimeoutMS="{x:Null}" Username="[username]">
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="SNOW_Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Salesforce Expense Tracker" sap:VirtualizedContainerService.HintSize="524,57" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[password]" Username="[username]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Chrome: Log in | ServiceNow" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="2ef72faf-04fa-43f4-85b2-638d3c985b9b" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome: Log in | ServiceNow" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2ef72faf-04fa-43f4-85b2-638d3c985b9b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -190,7 +193,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'User name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="2ef72faf-04fa-43f4-85b2-638d3c985b9b" SecureText="{x:Null}" Text="[username]" Timeout="{x:Null}" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'User name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2ef72faf-04fa-43f4-85b2-638d3c985b9b" Text="[username]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="M5mMVTWEnEub7w_R8wDV5g" DesignTimeRectangle="823, 471, 290, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='User name' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="191d7a04-8d08-462c-ab45-50b173e7eff0" InformativeScreenshot="926211bf68e8733fe832c96cf7021b1f.png" Reference="KQVPUxej_kueHq9x81j-2w/Q4S_GppV6UaEv9gzP7Lu6w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in | ServiceNow' /&gt;" SearchSteps="FuzzySelector" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -211,7 +214,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="2ef72faf-04fa-43f4-85b2-638d3c985b9b" SecureText="[password]" Text="{x:Null}" Timeout="{x:Null}" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2ef72faf-04fa-43f4-85b2-638d3c985b9b" SecureText="[password]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="H_RH5Lj-5UaRXT_OcusZrw" DesignTimeRectangle="823, 530, 259, 32" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='form-control' aaname='Password' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e4021e5a-d70b-4021-89f2-2b297d8f7c21" InformativeScreenshot="3ec62152dddc7230bbb7120f7f40f7bf.png" Reference="KQVPUxej_kueHq9x81j-2w/o_FpCrHnDE28j1_FAH-Oug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in | ServiceNow' /&gt;" SearchSteps="FuzzySelector" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -232,7 +235,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Log in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="2ef72faf-04fa-43f4-85b2-638d3c985b9b" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2ef72faf-04fa-43f4-85b2-638d3c985b9b" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable ContentHash="Z6ILkwUG8UqVR2voeHTH1g" DesignTimeRectangle="823, 582, 290, 32" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="b2383638-0bfd-441d-991a-0ba60147ca8a" InformativeScreenshot="88b09a6bc6896e4c75f67c98a83140bf.png" Reference="KQVPUxej_kueHq9x81j-2w/Wf5U1fUHPkuYM5l5ylmMzg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NClick.Target>
@@ -277,7 +280,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Navigate to DDM HRs" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="Never" OutUiElement="{x:Null}" ScopeGuid="737c0125-998f-4096-9b7c-17bab9619a9e" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Navigate to DDM HRs" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="737c0125-998f-4096-9b7c-17bab9619a9e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -333,7 +336,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'DDM HRs Link'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_6" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="737c0125-998f-4096-9b7c-17bab9619a9e" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DDM HRs Link'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="737c0125-998f-4096-9b7c-17bab9619a9e" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do%3Fsysparm_dashboard%3D283eeaa0c730030020508b3c5c9763b3%26sysparm_breakdown_source%3D7e945739c7000300b0ea8b3c5c976319%26sysparm_element%3D%26sysparm_element_value%3D%26sysparm_tab%3D964eaaa0c730030020508b3c5c9763a3" ContentHash="Fk2_nZIpU0G-ot5CfJ5FbA" DesignTimeRectangle="48, 767, 72, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='DDM HRs' class='label' shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-MENU' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-COLLAPSIBLE-LIST' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl aaname='DDM HRs' class='label' shadowhostid='' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' check:innerText='DDM HRs' /&gt;" Guid="245f3342-fb34-4a36-90bd-d9710ab13bf3" InformativeScreenshot="c5d95d8c11b9838fe9da112501a95c10.png" Reference="KQVPUxej_kueHq9x81j-2w/cRPGuh4D_k6J66cWv9sTOA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Admin Console | ServiceNow' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -367,7 +370,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'New'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_7" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="737c0125-998f-4096-9b7c-17bab9619a9e" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="737c0125-998f-4096-9b7c-17bab9619a9e" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/x_uipa_simple_gift_ddm_hr_list.do%3Fsysparm_userpref_module%3D4d355a7fdb83281021be144e1396196e%26sysparm_clear_stack%3Dtrue" ContentHash="0XIs6Om8uEO2N4_i87Qj6g" DesignTimeRectangle="1463, 179, 49, 32" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="8c11d112-9e93-4fb2-9933-8cc5a0d737a0" InformativeScreenshot="1b84a24db65957fb2faa8134ec6848c7.png" Reference="KQVPUxej_kueHq9x81j-2w/c48B5MFOE0OoviroJTOcUw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DDM HRs | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
                   <uix:TargetAnchorable.PointOffset>
@@ -419,7 +422,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Create Employee Record" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="Never" OutUiElement="{x:Null}" ScopeGuid="07e69a7b-fc36-4600-a839-3e3b973f9e61" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Create Employee Record" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="07e69a7b-fc36-4600-a839-3e3b973f9e61" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -432,17 +435,17 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'Title'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" InUiElement="{x:Null}" Item="[empTitle]" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Timeout="{x:Null}" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Title'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[empTitle]" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Version="V5">
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable ContentHash="0NQr-g4swEuHWEbMGFfHyw" DesignTimeRectangle="1055, 240, 313, 32" DesignTimeScaleFactor="1" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl tag='SELECT' /&gt;" Guid="8952a29e-50f6-491d-89ae-a1086fb34956" InformativeScreenshot="f05095b5dcbd2384c1450d3da8f6411a.png" Reference="KQVPUxej_kueHq9x81j-2w/YiT44hQAuUWbDvTEztznTQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'Gender'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_2" InUiElement="{x:Null}" Item="[empGender]" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Timeout="{x:Null}" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Gender'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[empGender]" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Version="V5">
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable ContentHash="CpWdfVcB5EiRHoXbi9kgmQ" DesignTimeRectangle="1855, 240, 313, 32" DesignTimeScaleFactor="1" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aria-labelledby='label.x_uipa_simple_gift_ddm_hr.gender' tag='SELECT' /&gt;" Guid="8bec949d-8409-434a-9f3d-d26daf2585e3" InformativeScreenshot="182afb0228c3387da7622ec4e737255b.png" Reference="KQVPUxej_kueHq9x81j-2w/rwsC-xg40U6K9WYSC4kEUg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'FirstName'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InUiElement="{x:Null}" InteractionMode="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" SecureText="{x:Null}" Text="[empFirsName]" Timeout="{x:Null}" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'FirstName'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Text="[empFirsName]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="mKqBGcMA0kW2efkSx49LqA" DesignTimeRectangle="1055, 278, 313, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="9b87bf61-9383-49e8-a874-2d46bc0d7ffa" InformativeScreenshot="92d857adc71aa88e18e614d2a96c8114.png" Reference="KQVPUxej_kueHq9x81j-2w/dwfPbiFSjEW3KzzQzl2lPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NTypeInto.Target>
@@ -457,7 +460,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Lastname'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InUiElement="{x:Null}" InteractionMode="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" SecureText="{x:Null}" Text="[empLastName]" Timeout="{x:Null}" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Lastname'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Text="[empLastName]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="G4KLTb7bTEmjkzrcKTiEeQ" DesignTimeRectangle="1855, 278, 313, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aria-labelledby='label.x_uipa_simple_gift_ddm_hr.lastname' tag='INPUT' type='text' /&gt;" Guid="67eff55f-aa6d-4411-a395-41fc99ba220c" InformativeScreenshot="f7361743f7ac58b663fddb7d4a961b9a.png" Reference="KQVPUxej_kueHq9x81j-2w/iT5mektloUm1tnApeX1rWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NTypeInto.Target>
@@ -472,7 +475,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Address1'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InUiElement="{x:Null}" InteractionMode="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" SecureText="{x:Null}" Text="[empAddress1]" Timeout="{x:Null}" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Address1'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Text="[empAddress1]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="drCdDx3LA06Pzdp2fF0r5Q" DesignTimeRectangle="1055, 316, 313, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aria-labelledby='label.x_uipa_simple_gift_ddm_hr.address1' tag='INPUT' type='text' /&gt;" Guid="b0f7aa66-6850-4c2f-a948-d68b835e5953" InformativeScreenshot="92195b4b68e63aa8903f0c198233bb26.png" Reference="KQVPUxej_kueHq9x81j-2w/04VG-79kYUO4OI6DFTFXQA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NTypeInto.Target>
@@ -487,7 +490,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Town'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InUiElement="{x:Null}" InteractionMode="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" SecureText="{x:Null}" Text="[empTown]" Timeout="{x:Null}" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Town'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Text="[empTown]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="BLIfBGukM0ilwcdnFOMP1Q" DesignTimeRectangle="1055, 354, 313, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aria-labelledby='label.x_uipa_simple_gift_ddm_hr.town' tag='INPUT' type='text' /&gt;" Guid="a69af8b7-6fc5-4d04-896e-f680c03b5f18" InformativeScreenshot="356df782864eb68e4f3f3c7d6e32afce.png" Reference="KQVPUxej_kueHq9x81j-2w/WWYK4mHaxESha8uucROyIA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NTypeInto.Target>
@@ -502,7 +505,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Postcode'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InUiElement="{x:Null}" InteractionMode="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" SecureText="{x:Null}" Text="[empPostCode]" Timeout="{x:Null}" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Postcode'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Text="[empPostCode]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="qfvlrbK60U2NymL6Lh4rhA" DesignTimeRectangle="1055, 392, 313, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aria-labelledby='label.x_uipa_simple_gift_ddm_hr.postcode' tag='INPUT' type='text' /&gt;" Guid="1f4fc47c-1d86-4690-bf29-4d9b49510b43" InformativeScreenshot="c9eb8a59abf78a8a3d9f7a3bc5bc5e77.png" Reference="KQVPUxej_kueHq9x81j-2w/4JpoiHCP3UaE3jMaPHATaw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NTypeInto.Target>
@@ -517,7 +520,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'HomeEmail'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InUiElement="{x:Null}" InteractionMode="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" SecureText="{x:Null}" Text="[empHomeEmail]" Timeout="{x:Null}" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'HomeEmail'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Text="[empHomeEmail]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="RID54cjewk2SRXhqWjZAwg" DesignTimeRectangle="1055, 468, 313, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aria-labelledby='label.x_uipa_simple_gift_ddm_hr.homeemail' tag='INPUT' type='text' /&gt;" Guid="148d73cd-1857-40dd-8994-2826f8153b3a" InformativeScreenshot="736918664cfe98f5b377eb95e4ed5083.png" Reference="KQVPUxej_kueHq9x81j-2w/hUbBvx8uIEyUjxdPe4XOdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NTypeInto.Target>
@@ -532,7 +535,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="NClick_4" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="07e69a7b-fc36-4600-a839-3e3b973f9e61" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable ContentHash="VkezvCDx6UyNTT1cebsYxw" DesignTimeRectangle="778, 610, 66, 32" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button' tag='BUTTON' type='submit' /&gt;" Guid="6c40809b-ab2d-41c8-98d3-1c091c493175" InformativeScreenshot="2c40ea285281c2f651d7748a4423333b.png" Reference="KQVPUxej_kueHq9x81j-2w/XeblkYcu3kqmcT-gvxZebw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Created | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
                   <uix:TargetAnchorable.PointOffset>
@@ -578,20 +581,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Verify Employee Record Created and Logout" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="Never" OutUiElement="{x:Null}" ScopeGuid="2e0682e4-d51e-4941-b36b-003c0b230933" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Verify Employee Record Created and Logout" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,2427" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,905" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,2224" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'All'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'All'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do" ContentHash="18OiXGxtrEqxQXpiN1vLsw" DesignTimeRectangle="202, 131, 42, 32" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl aria-role='menuitem' shadowhostid='' tag='DIV' /&gt;" Guid="56b7ecd9-3840-4542-bb68-4c4c8cb66a7f" InformativeScreenshot="3187bedfd44677c89b4dae857981d06f.jpg" Reference="KQVPUxej_kueHq9x81j-2w/Gltxdwh-b0m3aQk5I_9cog" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Incident Overview | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -609,7 +612,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''INPUT filter''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="DebuggerApi" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Text="DDM HRS" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''INPUT filter''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="DebuggerApi" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Text="DDM HRS" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do" ContentHash="wM7VvuzsVEaqnPH0-dz0Og" DesignTimeRectangle="80, 185, 202, 32" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-MENU' /&gt;&lt;webctrl id='filter' shadowhostid='' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-MENU' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl id='filter' shadowhostid='' tag='INPUT' type='text' class='navigation-filter keyboard-navigatable has-focus' placeholder='Filter' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ce35a60c-8175-4e0d-99cf-5c86fbaf2181" InformativeScreenshot="c9ca05dcd384e0c99f714c8e629dbc4c.jpg" Reference="KQVPUxej_kueHq9x81j-2w/9y2HfYCSBESlguGOG9hceg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Incident Overview | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
                   <uix:TargetAnchorable.PointOffset>
@@ -634,7 +637,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DDM HRs Link'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DDM HRs Link'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do%3Fsysparm_dashboard%3D283eeaa0c730030020508b3c5c9763b3%26sysparm_breakdown_source%3D7e945739c7000300b0ea8b3c5c976319%26sysparm_element%3D%26sysparm_element_value%3D%26sysparm_tab%3D964eaaa0c730030020508b3c5c9763a3" ContentHash="Fk2_nZIpU0G-ot5CfJ5FbA" DesignTimeRectangle="48, 767, 72, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='DDM HRs' class='label' shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-MENU' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-COLLAPSIBLE-LIST' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl aaname='DDM HRs' class='label' shadowhostid='' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' check:innerText='DDM HRs' /&gt;" Guid="245f3342-fb34-4a36-90bd-d9710ab13bf3" InformativeScreenshot="c5d95d8c11b9838fe9da112501a95c10.png" Reference="KQVPUxej_kueHq9x81j-2w/cRPGuh4D_k6J66cWv9sTOA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Admin Console | ServiceNow' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -668,30 +671,38 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <If Condition="[in_FlowDecision=&quot;Pass&quot;]" DisplayName="Check Record Created. Pass if Found, Fail if not found" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[in_FlowDecision=&quot;Pass&quot;]" DisplayName="Check Record Created. Pass if Found, Fail if not found" sap:VirtualizedContainerService.HintSize="488,1376" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,446" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,1129" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState CheckWindowActive="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State - Emp Address is found" Exists="{x:Null}" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,386" sap2010:WorkflowViewState.IdRef="NCheckState_1" InUiElement="{x:Null}" OutUiElement="{x:Null}" Result="{x:Null}" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Timeout="{x:Null}" Version="V5">
+                  <uix:NCheckState DisplayName="Check App State - Emp Address is found" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1069" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears and proceed with Delete Routine" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence DisplayName="Target appears and proceed with Delete Routine" sap:VirtualizedContainerService.HintSize="450,393" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click Address1" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="334,281" sap2010:WorkflowViewState.IdRef="NClick_9" InUiElement="{x:Null}" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+                        <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[in_FlowDecision=&quot;Pass&quot;]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uta:VerifyExpression>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Address1" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/x_uipa_simple_gift_ddm_hr_list.do" ContentHash="QrRzc7OGO0WLK6_u1b-ecQ" DesignTimeRectangle="404, 316, 55, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-label='{0} - Open record: *' tableRow='*' tag='A' /&gt;&quot;, empAddress1)]" Guid="a49beae9-7afb-4a03-a9ce-179ce92993f6" InformativeScreenshot="0927d40950c14b549fc7fb58890c97a7.png" Reference="KQVPUxej_kueHq9x81j-2w/hnSrTLKRi0WcmFA8_eS7TA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DDM HRs | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
                               <uix:TargetAnchorable.WaitForReadyArgument>
@@ -715,8 +726,14 @@
                               </uix:VerifyExecutionOptions.Timeout>
                             </uix:VerifyExecutionOptions>
                           </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Delete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,313" sap2010:WorkflowViewState.IdRef="NClick_10" InUiElement="{x:Null}" InteractionMode="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Delete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/x_uipa_simple_gift_ddm_hr.do%3Fsys_id%3D3d99bf4a9764c3104e77b22e6253afba%26sysparm_record_target%3Dx_uipa_simple_gift_ddm_hr%26sysparm_record_row%3D2%26sysparm_record_rows%3D4%26sysparm_record_list%3D" ContentHash="Sw5DGtD3ZUOyjAyuqzK2Xw" DesignTimeRectangle="410, 602, 64, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aaname='Delete' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button' tag='BUTTON' type='submit' /&gt;" Guid="bbcd4582-882a-4ed4-bb4a-2b6a0d58dd12" InformativeScreenshot="e9a2feb9b0bf90c2c6c273a058779d6a.png" Reference="KQVPUxej_kueHq9x81j-2w/S1Z0o1w90E6t-ZZu6WDbUg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Created 2026-05-01 12:02:13 | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NClick.Target>
@@ -730,8 +747,14 @@
                               </uix:VerifyExecutionOptions.Timeout>
                             </uix:VerifyExecutionOptions>
                           </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Delete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,313" sap2010:WorkflowViewState.IdRef="NClick_13" InUiElement="{x:Null}" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Delete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/x_uipa_simple_gift_ddm_hr.do%3Fsys_id%3D3d99bf4a9764c3104e77b22e6253afba%26sysparm_record_target%3Dx_uipa_simple_gift_ddm_hr%26sysparm_record_row%3D2%26sysparm_record_rows%3D4%26sysparm_record_list%3D" ContentHash="-7mXYQuork2IcL4SnafrPw" DesignTimeRectangle="994, 325, 70, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aaname='Delete' tag='BUTTON' type='button' /&gt;" Guid="bd6a3487-2941-434f-8e5f-4366c47dab12" InformativeScreenshot="8de5a58798bb5d9d6d47e1cedb46851d.png" Reference="KQVPUxej_kueHq9x81j-2w/_z8aYf5wdkCNFDAVNlTPYA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Created 2026-05-01 12:02:13 | DDM HR | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NClick.Target>
@@ -745,6 +768,12 @@
                               </uix:VerifyExecutionOptions.Timeout>
                             </uix:VerifyExecutionOptions>
                           </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Test has passed. Emp Address is displayed&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
@@ -771,13 +800,21 @@
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear and log error" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <Sequence DisplayName="Target does not appear and log error" sap:VirtualizedContainerService.HintSize="450,340" sap2010:WorkflowViewState.IdRef="Sequence_9">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
+                        <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[in_FlowDecision=&quot;Pass&quot;]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uta:VerifyExpression>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Test has failed. Emp Address is not displayed&quot;]" />
                         <Assign sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
@@ -814,7 +851,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState CheckWindowActive="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State 'Emp Address Bad'" Exists="{x:Null}" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,48" sap2010:WorkflowViewState.IdRef="NCheckState_2" InUiElement="{x:Null}" OutUiElement="{x:Null}" Result="{x:Null}" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Timeout="{x:Null}" Version="V5">
+                  <uix:NCheckState DisplayName="Check App State 'Emp Address Bad'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,48" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484,248" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
@@ -900,7 +937,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click ''UL''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,313" sap2010:WorkflowViewState.IdRef="NClick_11" InUiElement="{x:Null}" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''UL''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,313" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24cti_softphone.do" ContentHash="RMvI2V7lPUeGFH2KbjL4Ng" DesignTimeRectangle="1477, 135, 24, 24" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='NOW-AVATAR' /&gt;&lt;webctrl class='now-avatar-content' shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='NOW-AVATAR' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl class='now-avatar-content' shadowhostid='' tag='SPAN' type='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='UL' /&gt;" Guid="7b6db255-1129-4d59-b45e-df0dd8a8a2fa" InformativeScreenshot="7a8d7f58138882477c472141fd289015.png" Reference="KQVPUxej_kueHq9x81j-2w/aqi0Da2ZX0eCkxiQ4IBzkg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ServiceNow CTI | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
                   <uix:TargetAnchorable.PointOffset>
@@ -919,7 +956,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click ''Log out''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="NClick_12" InUiElement="{x:Null}" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Log out''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2e0682e4-d51e-4941-b36b-003c0b230933" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="ven03565.service-now.com/now/nav/ui/classic/params/target/%24cti_softphone.do" ContentHash="czYw7ufdC0yFl7t93V-PyA" DesignTimeRectangle="1259, 502, 246, 19" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl aaname='Log out' parentid='userMenu' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' /&gt;&lt;webctrl aaname='Log out' parentid='userMenu' shadowhostid='' tag='DIV' type='' class='user-menu-label polaris-enabled' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Log out' /&gt;" Guid="de146cc4-6ffb-44b2-aede-eacb9c61c757" InformativeScreenshot="a0d1d96f8b73e82d83c87e81e145a694.png" Reference="KQVPUxej_kueHq9x81j-2w/aBhs1ciEZ0yrXx-Gu95jog" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ServiceNow CTI | ServiceNow' /&gt;" SearchSteps="Selector" Version="V6">
                   <uix:TargetAnchorable.PointOffset>
@@ -960,12 +997,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="524,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,240" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
